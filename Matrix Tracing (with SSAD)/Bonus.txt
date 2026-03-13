@@ -1,0 +1,59 @@
+Requirement : 
+
+Basic
+
+	1.Generate a graph G=(V, E) in random, the weights and density of the edges in G can be assigned by user.
+		
+	-> 首先，在 'n = ' 欄位，輸入方陣大小，再於 'Range(w(e))' 輸入隨機生成邊長權重的值域。其次，在 'If w(e) > ' 欄位，設定隨機生成數值大於  'If w(e) > ' 欄位數值 時，將兩點在相鄰矩陣的位置設定為無鄰邊相連。再者，於 'Then, w(e) = ' 欄位，輸入當隨機生成數值大於  'If w(e) > ' 欄位數值時，將其設定成某定值。最後，按下 'Generate Graph' Button，會自動跳至 'Adjacent Ｍatrix' 分頁，於 StringGrid 上顯示每兩點間相鄰邊的權重數值。
+
+For Problem 1 and 2:
+
+	2. Find shortest distance from single source to every vertices (single source all destinations) 
+	
+	-> 首先，在 'Source no. = ' 欄位，輸入起點位置。接者，選擇是否要勾選 'Tracing Detailed Process' 的 CheckBox，再按下 'Single Source All Destinations' Button，會自動跳至 'SSAD solution' 分頁，若有勾選 CheckBox，則會於 Ｍemo 上輸出由指定點到其他點的 尋找最短路徑的流程 + 兩點間的最短路徑。若沒有勾選 CheckBox，則只會在 Memo 上輸出由指定點到其他點的 最短路徑。
+
+	3. Find shortest distance between and two points  
+	
+	-> 首先，選擇是否要勾選 'Tracing Detailed Process' 的 CheckBox，再按下 'All Pairs' Button，若沒有勾選 CheckBox ，會自動跳至 'All Pairs Matrix' 分頁，並於 StringGrid 上顯示每兩點間的 最短路徑 數值。 
+
+	     若有勾選  'Tracing Detailed Process' 的 CheckBox，再按下 'All Pairs' Button，則會自動跳至 'All Pairs Tracing Record' 分頁，並在 Memo 上顯示每兩點間的 尋找最短路徑的流程 + 每兩點間的 最短路徑，同時，也會在 'All Pairs Matrix' 分頁，於 StringGrid 上顯示每兩點間的 最短路徑 數值。
+
+	4.User can trace the process of solving this problem.
+
+	-> 若有先勾選  'Tracing Detailed Process' 的 CheckBox，再按下 'Shortest Path Solver' GoupBox 內的所有 Button，都會自動跳至對應的分頁，輸出 尋找路徑時的流程。
+
+For Problem 3:
+
+	2.Find transitive closure of the given graph.
+
+	-> 按下 'Transitive Closure' Button，若沒有勾選 'Tracing Detailed Process' 的 CheckBox ，會自動跳至 'Transitive Closure Matrix' 分頁，並於 StringGrid 上顯示 每兩點間是否有邊可以相連 (兩點有邊相連 -> 顯示 1 / 兩點沒有邊相連 -> 顯示 0)。 
+
+Advanced
+
+	1. For Problem 1: Report the shortest paths from the source to all destinations (SSAD)
+	
+		-> 首先，在 'Source no. = ' 欄位，輸入起點位置。接者，選擇是否要勾選 'Tracing Detailed Process' 的 CheckBox，再按下 'Single Source All Destinations' Button，會自動跳至 'SSAD solution' 分頁，若有勾選 CheckBox，則會於 Ｍemo 上輸出由指定點到其他點的「最短路徑」+ 尋找最短路徑的流程。
+
+	2. For Problem 2: Report the shortest paths for all pairs 
+
+		-> 若有先勾選  'Tracing Detailed Process' 的 CheckBox，再按下 'All Pairs' Button，會自動跳至 'All Pairs Tracing Record' 分頁，並在 Memo 上顯示每兩點間的「最短路徑」 + 尋找最短路徑的流程 。
+
+	3. Tracing Detailed Process of "Transitive Closure"
+	
+		-> 若有勾選  'Tracing Detailed Process' 的 CheckBox，再按下 'All Pairs' Button，會自動跳至 'Transitive Closure Tracing Record' 分頁，並在 Memo 上顯示流程。同時，也會在 'Transitive Closure Matrix' 分頁，於 StringGrid 上顯示 每兩點間是否有邊可以相連 (兩點有邊相連 -> 顯示 1 / 兩點沒有邊相連 -> 顯示 0)。 
+
+	4. 手動讀取 Graph G
+	
+		-> 按下 'Read Graph G' Button 後，可以選擇讀取任一 txt 檔案 :  Graph_1、Graph_2、Graph_3。成功讀取檔案後，會自動跳至 'Adjacent Ｍatrix' 分頁，於 StringGrid 上顯示每兩點間相鄰邊的權重數值。
+
+	5. 防呆機制
+
+		-> 在 'n = '、'Range(w(e))'、'If w(e) >'、'Then, w(e) = ' 欄位，輸入非正整數後，按下 'Generate Graph' Button 時，會跳出 ShowMessage 警告訊息，並清除對應欄位的數值。
+
+		-> 在 'Source no. = ' 欄位，輸入非正整數，或者數值大於等於 n 時，並按下 'Single Source All Destinations' Button，會跳出 ShowMessage 警告訊息，並清除 'Source no. = ' 欄位的數值。
+
+		-> 若在沒有成功手動讀取 Graph G 且沒有隨機生成 Graph G 時，按下 'Single Source All Destinations'、'All Pairs' 和 'Transitive Closure' Button，皆會跳出 ShowMessage 警告訊息。
+
+
+		
+

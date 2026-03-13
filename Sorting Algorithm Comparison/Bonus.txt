@@ -1,0 +1,62 @@
+Basic :
+ 
+	1. 輸入整數 N 和亂數範圍 Range
+	
+		-> 在 'Input' 的 GroupBox 內，於 'N = ' 欄位，輸入隨機產生數值的數目，並在 'Range(1, N)' 欄位輸入亂數範圍。	
+
+	2. 輸入整數 Times 為希望執行的次數
+	
+		-> 在 'Input' 的 GroupBox 內，於 'Times = ' 欄位，輸入執行次數。
+
+	3. 排序演算法︰
+
+    	(1). Selection sort     (2). Insertion sort        (3). Bubble sort
+	
+	(4). Quick sort (recursive versions)
+
+   	(5). Quick sort (non-recursive versions)
+
+    	(6). Merge sort (recursive versions)
+
+    	(7). Merge sort (non-recursive versions)
+
+    	(8). Heap sort
+
+		-> 在 'Sorting_Selection' 的 GroupBox 內，可以勾選一至多個欲執行的排序演算法 CheckBox。
+   
+	4. 印出 Sort 後的 n 個亂數與執行各排序演算法的 CPU 時間
+
+		-> 勾選 'Display Data' 的 CheckBox，再按下 'Execute' 的 Button，右側分頁會自動跳至 'Data' 分頁，並於 Memo 上輸出 排序前 + 排序後 數值，同時，也會附上在 'Sorting_Selection' 的 GroupBox 內，已勾選的各個排序演算法，在不同 1~N Times 資料量下，演算法的 CPU 的執行時間。 
+
+	5. 比較其資料數量不同時，上述演算法的CPU執行時間。
+
+		-> 在按下 'Execute' 的 Button 後，右側分頁會自動跳至 'Data' 分頁，並於 Memo 上輸出在 'Sorting_Selection' 的 GroupBox 內，已勾選的各個排序演算法，在不同 1~N Times 資料數量下，演算法的 CPU 的執行時間。
+
+Bonus : 
+
+	1. 為求數據準確，建議多 run 若干次以平均執行時間回報 (如：n=1000 時會 run 12 次 (可輸入 # of loops)，捨去時間最佳、最差者各兩次，用其餘 8 次取平均)，以上參數皆自行斟酌命名、設定其值。
+
+		-> 在 'Input' 的 GroupBox 內，於 '循環次數 = ' 欄位，輸入重複執行次數，即可於特定 N 值、亂數值下，重複執行 K 次。於此同時，若重複執行次數 K 小於 10 時，僅會直接將所有 CPU 執行次數相加取平均 ; 若重複執行次數 K 大於等於 10 時，則會將 CPU 執行時間最短和最長的各兩筆資料扣除，再相加取平均，增加數據準確性。
+
+ 	2. Radix sort
+	
+		-> 有，在 'Sorting_Selection' 的 GroupBox 內，可以勾選排序演算法 'Radix Sort' 的 CheckBox 。
+	
+	3. Counting sort
+
+		-> 有，在 'Sorting_Selection' 的 GroupBox 內，可以勾選排序演算法 'Counting Sort' 的 CheckBox 。
+		
+	4. 可利用BCB TChart 元件畫出各排序演算法的執行效能折線圖
+	
+		-> 先勾選 'Draw Button' 的 CheckBox，再按下 'Execute' 的 Button，右側分頁會自動跳至 'Diagram' 分頁，並顯示在 'Sorting_Selection' 的 GroupBox 內，勾選的各個排序演算法的執行效能折線圖。
+
+	5. 防呆機制
+		
+		->在 'Input' 的 GroupBox 內，若於 'N = '、'Times = '、'循環次數 = ' 欄位輸入小於 1 的數值，抑或者於 'Range(1, N)' 欄位輸入小等於 1 的數值，皆會透過 ShowMessage，顯示警告訊息。
+
+		-> 在 'Sorting_Selection' 的 GroupBox 內，若未勾選任何一個 CheckBox，也會透過 ShowMessage，顯示警告訊息。
+
+		-> 在按下 'Execute' Button 後，在排序演算法尚未執行完成之前，'Execute' Button 會被設定為無法按下，避免程式出現錯誤。
+
+
+

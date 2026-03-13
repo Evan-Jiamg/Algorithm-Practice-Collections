@@ -1,0 +1,25 @@
+Requirement : 
+
+	• input: Polynomials A and B
+
+	• output: C = A + B
+
+	(1) 首先，在 GroupBox "手動輸入多項式 : " 內的 "Coefficient" 欄位輸入係數、"Exponent" 欄位輸入指數。
+	
+	(2) 其次，勾選要將數值加入進 多項式 A "Poly A" 或者 多項式 B "Poly B"，再按下 "New Term in Polynomial" 按鈕，將數值新增至多項式。於此同時，自動跳至 "Display the Polynomials" 分頁，顯示當前多項式在 Memo 上。
+
+	(3) 除此此外，也可以在 GroupBox "自動隨機輸入多項式 : " 中，輸入要生成的多項式 A 和 B 的最大指數於 "最大指數數值 : " 欄位、係數的值域 (+/-)於 "Max range of 項數 (+/-) : " 欄位。接者，按下 "Random 生成 Poly A and B" 按鈕，自動跳至 "Display the Polynomials" 分頁，並將生成的兩個多項式顯示在 Memo 上。
+
+	(4) 最後，按下 "C = A + B" 按鈕，將已生成的兩多項式 A 和 B 相加為 多項式 C，並且自動跳至 "Addition of Polynomials" 分頁，顯示多項式 A、B 相加為 多項式 C 的結果。
+
+	(5) 防呆機制 :
+		
+		在 GroupBox 的 "手動輸入多項式 : "內，當輸入非整數於 "Coefficient : " 欄位、負整數於 "Exponent : " 欄位時，抑或者，未點選任一個 Poly A 或 Poly B 選項，而直接按下 "New Term in Polynomial" 按鈕時，會自動跳至 "Display the Polynomials" 分頁，顯示警告訊息。
+
+		在 GroupBox 的 "手動輸入多項式 : "內，當輸入負整數於 "最大指數數值" 欄位、非正整數於 "Max range of 項數 (+/-)" 欄位時，直接按下 "New Term in Polynomial" 按鈕後，會自動跳至 "Display the Polynomials" 分頁，顯示警告訊息。
+
+		當多項式 A 或 多項式 B 為空時，直接按下 "C = A + B" 按鈕，會顯示警告訊息於 "Display the Polynomials" 分頁上的 Memo。
+
+	(6) 新增 "Clear All" 按鈕
+		
+		按下 "Clear All" 按鈕後，會將清除所有 Edit 欄位、Memo 欄位，以及將所有 CheckBox 設定為未勾選狀態。同時，也會將多項式 A、B、C 內的數值皆清空。

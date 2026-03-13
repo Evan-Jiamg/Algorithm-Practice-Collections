@@ -1,0 +1,41 @@
+Requirement:
+   Basic:
+	1. 按下 "由外部載入迷宮" 按鈕，可以選擇讀取任一 .txt 檔。
+
+	2. 資料夾內，有內建 3 個 .txt 迷宮，名稱為 Maze1-7_8.txt , Maze2-13_15.txt , Maze3-21_21.txt，陣列大小分別為 7*8 , 13*15 , 21*21。
+	
+	3. 使用 try and error 的 stack 找到迷宮。
+
+   Advanced (Bonus):
+	1. 使用 DataGridView 來表示迷宮。 (顯示在 String_Grid 分頁)
+	
+	2. 勾選 Display the Route 的 CheckBox 後，按下 "開始尋找" 按鈕，頁面會自動跳至 Moving_Grid 分頁，來顯示尋找迷宮路徑的 Animation。  
+	    
+	    ( 2.1 深藍色 -> try and error 所找到的路徑  /  青藍色 -> 曾經走過，但為死路而折返的路徑紀錄。)
+	    ( 2.2 沒有勾選時，僅會在 String_Grid 分頁上，顯示迷宮的 StringGrid 路徑結果。)
+	
+	3. 先輸入迷宮的 "高度" , "寬度" 和 "Grid" 的數值，再按下 "隨機生成迷宮" 按鈕，即可隨機生成迷宮。 
+	
+	4. 其他:
+
+		4.1  防呆機制:
+			
+			-> 當輸入 非正整數 或 偶數 或 小於 5 的數值至 "高度" 和 "寬度" 時，頁面會自動跳至 Show_Maze 分頁，並在 Show_Maze , Tracing_Record 兩頁面中皆顯示警告訊息。 
+			       
+			-> 當輸入 非正整數 至 Grid 時，頁面也會自動跳至 Show_Maze 分頁，並在 Show_Maze 頁面中顯示警告訊息。
+			
+			-> 在按下 "開始尋找" 按鈕後，會將除了調整動畫速度的 TrackBar 外，所有其他 Button 和 CheckBox 皆設定為不可按下和勾選，以確保動畫執行過程中，不會因為亂按其他按鈕，導致程式執行出錯。
+			      (TrackBar 在動畫執行過程中，可以任意調動，來動態調整動畫顯示速度)
+
+			-> 在未按下 "隨機生成迷宮" 或 "從外部載入迷宮" 時，直接按下 "開始尋找" 按鈕，頁面會自動跳至 Show_Maze 分頁，並在 Show_Maze , Tracing_Record 兩頁面中皆顯示警告訊息。 
+
+		4.2 新增 Tracing_Record 分頁:
+			
+			-> 在按下 "開始尋找" 按鈕後，輸出 pop、push 進 stack 時的所在位置和方向，並且也會輸出嘗試移動到某位置、方向的過程紀錄。
+		
+		4.2 新增 Re-Run 按鈕:
+			
+			-> 按下按鈕後，會清除 Show_Maze 和 Tracing_Record 分頁上 Memo 的所有內容。
+			     同時，清除 String_Grid 和 Moving_Grid 分頁上所有 StringGrid 的內容。
+
+		 

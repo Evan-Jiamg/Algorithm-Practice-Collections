@@ -1,0 +1,66 @@
+Requirement:
+
+   Basic:  
+	1. Singly circular list with a header node 
+
+		1.1 點選 "Singly Linked List" 分頁，接者輸入元素，再按下 "Insert as First" 按鈕，會新增元素於開頭空白節點之後，使其成為環狀串列的第一個元素 ; 抑或者，按下 "Insert as Last" 按鈕，會將元素新增為環狀串列的最後一個節點，並於最下方 Memo 依序顯示整個串列節點的資料內容。
+
+		1.2 於此同時，可以藉由隨機產生數值的方式，透過輸入項數 n 、值域  Range，來生成 n 個由 [1, Range] 的整數亂數。再藉由按下 "Randomly Insert as First" 按鈕或 "Randomly Insert as Last" 按鈕，將多個整數亂數新增至環狀串列的最前端，抑或是最後端。
+	
+		1.3 此外，透過輸入 Target 數值，並點選右側 GroupBox 內的 "開始尋找" 按鈕，能夠搜尋當下環狀串列節點是否具有 Target ，若無會在 Memo 顯示 "Target does not exist in List!!!" ，若有會在 Memo 顯示 "Target -> Successfully found!!!"。除此之外，也可以在點選按鈕前，勾選旁邊的 CheckBox : "在 Target 前插入元素"、"在 Target 後插入元素"，並在上方 "輸入元素" 欄位填入想要輸入的元素，來插入元素至 Target 節點之前、之後。抑或者，勾選 "刪除 Target"，再點選 "開始尋找" 按鈕，來刪除所找到的 target元素。
+
+		1.4  按下 "Clear Singly Linked List / Re-Run" 按鈕，清除所有節點（不含開頭空白節點）並歸還記憶空間 ，同時也會將 Memo 內的所有內容清空。
+
+	2. Linked Stack
+		
+		2.1 點選 "Linked Stack" 分頁，接者輸入元素，再按下 "Push 元素" 按鈕，會新增元素於 Stack 頂端，使其成為環狀串列的第一個元素，並於最下方 Memo 依序顯示整個串列節點的資料內容。
+		
+		2.2 於此同時，可以藉由隨機產生數值的方式，透過輸入項數 n 、值域  Range，來生成 n 個由 [1, Range] 的整數亂數。再藉由按下 "Push n 個元素" 按鈕，將多個整數亂數新增至環狀串列的最前端。
+
+		2.3 此外，透過點選 "Pop 元素" 按鈕，能夠輸出當下 List 最前端 (不含空白節點)的元素，並於最下方 Memo 顯示輸出結果 "Result -> 某數值 " + 整個串列節點的資料內容 "Stack top: ... -> ..." 。
+
+		2.4  按下 "Clear Linked Stack / Re-Run" 按鈕，清除所有節點（不含開頭空白節點）並歸還記憶空間 ，同時也會將 Memo 內的所有內容清空。
+
+	3. Linked Queue
+
+		3.1 點選 "Linked Queue" 分頁，接者輸入元素，再按下 "Insert Queue" 按鈕，會新增元素於環狀串列的最後端，並於最下方 Memo 依序顯示整個串列節點的資料內容。
+		
+		3.2 於此同時，可以藉由隨機產生數值的方式，透過輸入項數 n 、值域  Range，來生成 n 個由 [1, Range] 的整數亂數。再藉由按下 "Insert n 個元素 in Queue" 按鈕，將多個整數亂數新增至環狀串列的最後端，並於最下方 Memo 依序顯示整個串列節點的資料內容。
+
+		3.3 此外，透過點選 "Delete Queue" 按鈕，能夠輸出當下 List 最前端 (不含空白節點)的元素，並於最下方 Memo 顯示輸出結果 "Output -> 某數值 " + 整個串列節點的資料內容 "Queue: ... -> ..." 。
+
+		3.4  按下 "Clear Linked Queue / Re-Run" 按鈕，清除所有節點（不含開頭空白節點）並歸還記憶空間 ，同時也會將 Memo 內的所有內容清空。 
+
+   Advanced (Bonus):
+	1. Doubly linked list with a header node
+		
+		1.1 點選 "Doubly Linked List" 分頁，接者輸入元素，再按下 "Insert as First" 按鈕，會新增元素於開頭空白節點之後，使其成為雙向環狀串列的第一個元素，並於最下方 Memo 依序顯示整個串列節點的資料內容。
+
+		1.2 於此同時，可以藉由隨機產生數值的方式，透過輸入項數 n 、值域  Range，來生成 n 個由 [1, Range] 的整數亂數。再藉由按下 "Randomly Insert as First" 按鈕，將多個整數亂數新增至雙向環狀串列的最前端，並於最下方 Memo 依序顯示整個串列節點的資料內容。
+	
+		1.3 此外，透過輸入 Target 數值，並點選右側 GroupBox 內的 "開始尋找" 按鈕，能夠搜尋當下環狀串列節點是否具有 Target ，若無會在 Memo 顯示 "Target -> do NOT exist!!!" ，若有會在 Memo 顯示 "Target -> Successfully found!!!"。除此之外，也可以在點選按鈕前，勾選旁邊 RadioButton "在 Target 後插入元素"，並在上方 "輸入元素" 欄位填入想要輸入的元素，來插入元素至 Target 節點之後。 抑或者，按下 "刪除 Target"，再點選 "開始尋找" 按鈕，來刪除所找到的 target元素。
+
+		1.4  按下 "Clear Doubly Linked List / Re-Run" 按鈕，清除所有節點（不含開頭空白節點）並歸還記憶空間 ，同時也會將 Memo 內的所有內容清空。	
+	
+	2. Reversed the list for
+		
+		2.1 a singly circular list with a header node
+
+				-> 在 "Singly Linked List" 分頁，插入完成元素後，按下 "Reversed Linked List" 按鈕，能夠反轉串列，並於最下方 Memo 依序顯示整個串列節點的資料內容。
+
+        	2.2 a doubly list with a header node
+
+				-> 在 "Doubly Linked List" 分頁，插入完成元素後，按下 "Reversed Doubly Linked List" 按鈕，能夠反轉串列，並於最下方 Memo 依序顯示整個串列節點的資料內容。
+
+	
+	3.  防呆機制:
+			
+		3.1 當輸入 非正整數 至所有 Edit 欄位，並按下按鈕後，會在對應分頁的最下方 Memo 顯示警告訊息。 
+			       
+		3.2 在 Linked Stack 分頁上，當 Stack 已無其他元素（不含開頭空白節點），若繼續按 "Pop 元素"，會在最下方 Memo 顯示警告訊息。
+
+		3.3 在 Linked Queue 分頁上，當 Queue 已無其他元素（不含開頭空白節點），若繼續按 "Delete Queue"，會在最下方 Memo 顯示警告訊息。
+
+		3.4 在 Singly Linked List 和 Doubly Linked List 分頁上，若未輸入 Target，直接按下 "開始尋找" 按鈕，會在對應分頁的最下方 Memo 顯示警告訊息，同時，若有勾選 "在 Target 前 / 後插入元素"，但未在 "輸入元素" 欄位，輸入數值時，也會在最下方 Memo 顯示警告訊息。
+
+		 

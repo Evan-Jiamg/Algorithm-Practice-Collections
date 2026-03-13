@@ -1,0 +1,26 @@
+Requirement:
+	
+	(1) Power / Exponentiation
+	
+		•Input: x, n 
+
+		•Output: x^n
+		
+		在 "Power / Exponentiation" 分頁，輸入底數於 "X = " 欄位、指數於 "N = " 欄位，再輸入重複執行次數在 "循環次數: " 欄位，並於 GroupBox 的 "Algorithm Options : "內，勾選要用哪些演算法 : pow(X, N)、for-loop、Squaring、Squaring_>>，接者，按下 "X^N" 按鈕， 會將所選的各個演算法執行時間與 X^N 計算結果，一併輸出於旁邊的 Memo 上。
+
+		防呆機制 : 
+				
+			若輸入小於 0 的整數至 "X = " 欄位或輸入小於 0 的整數至 "N = " 欄位，抑或者，輸入 0 於 "X = " 欄位和 "N = " 欄位，皆會顯示警告訊息於 旁邊的 Memo 上。同時，若輸入非正整數至 "循環次數: " 欄位，或者沒有勾選任何一個 "Algorithm Options" 內選項，直接按下 "X^N" 按鈕時，也會顯示警告訊息於旁邊的 Memo 上。
+
+	 (2) Polynomials
+
+		•Input: k, n, a[0], a[1], … , a[k-1]  (a[i] reads from a file)
+
+		•Output: f(1), f(2), … , f(n) where f(x) = a[0] + a[1]x + a[2]x^2 + … + a[k-1]x^(k-1) 
+		
+		在 "Polynomials" 分頁，先按下 "讀取係數檔案" 按鈕，並選擇其中一個多項式係數檔案 : "多項式_1.txt"、"多項式_2.txt"、"多項式_3.txt"，接著，會將讀入的多項式顯示在旁邊的 Memo 上，再於 "X = " 欄位輸入整數，再輸入重複執行次數在 "循環次數: " 欄位，並於 GroupBox 的 "Algorithm Options : "內，勾選要用哪些演算法 : Naive's method、Horner's method，再按下 "計算 f(X) 數值" 按鈕，會將所選的各個演算法計算 f(1) ~ f(X) 的計算與執行時間，一併輸出於旁邊的 Memo 上。
+
+		防呆機制 : 
+				
+			若未按下 "讀取係數檔案" 按鈕，或者未成功讀取係數檔案時，直接按下 "計算 f(X) 數值" 按鈕，會直接顯示警告訊息於旁邊的 Memo 上。此外，輸入非正整數至 "X = " 欄位或輸入非整數至 "循環次數 : " 欄位，也會顯示警告訊息於旁邊的 Memo 上。同時，若在沒有勾選任何一個 "Algorithm Options" 內選項，直接按下 "計算 f(X) 數值" 按鈕時，同樣也會顯示警告訊息於旁邊的 Memo 上。
+

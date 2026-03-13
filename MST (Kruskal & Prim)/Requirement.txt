@@ -1,0 +1,19 @@
+Requirement:
+	
+	1. 亂數產生圖 G 的相鄰矩陣，其濃密或稀疏程度可調整，使用者可選擇是否要印出 (如提示圖)
+
+		-> 首先，於 'Directed Graph G=(V, E)' 的 GroupBox 內，在 ' |V| = ' 欄位，輸入方陣大小，再於 'Range(w(e))' 輸入隨機生成邊長權重的值域。其次，在 'If w(e) > ' 欄位，設定隨機生成數值大於  'If w(e) > ' 欄位數值時，將兩點在相鄰矩陣的位置設定為無鄰邊相連。再者，於 'Then, w(e) = ' 欄位，輸入當隨機生成數值大於  'If w(e) > ' 欄位數值時，將其設定成某定值。接者，於 'Repetition = ' 欄位，輸入執行次數，每次重複執行時，|V| += 1000。最後，按下 'Generate Graph' Button，會自動跳至 'Edges Matrix' 分頁，顯示初始圖 G 已成功生成。
+
+		-> 若有勾選 'Echo Print Graph G' 的 CheckBox，則會自動跳至 'Adjacent Ｍatrix' 分頁，顯示圖 G 的相鄰矩陣，同時，也會於 'Edges Matrix' 分頁，顯示圖 G 兩相鄰點邊的權重數值。
+
+	2. 利用Kruskal演算法找出G的最小延展樹，印出執行時間，此最小延展樹可讓使用者選定是否要印出
+
+		-> 先在 'Directed Graph G = (V, E)' GroupBox 內，完成圖 G 生成後，在 'MST Solver' 的 GroupBox 內，按下 'Kruskal Algorithm (Min)' 或'Kruskal Algorithm (Heap)' Button，會自動跳至 'MST Record' 分頁，輸出 Graph G 的 MST 總權重值 + 執行時間 ; 若先勾選 'Echo Print MST' 的 CheckBox，再按下  'Kruskal Algorithm (Min)' 或'Kruskal Algorithm (Heap)' Button，同樣會跳至 'MST Record' 分頁，輸出 Graph G 的 MST 總權重值 + MST 路徑 + 執行時間。
+
+	3. 利用Prim演算法找出G的最小延展樹，印出執行時間，此最小延展樹可讓使用者選定是否要印出.
+
+		-> 先在 'Directed Graph G = (V, E)' GroupBox 內，完成圖 G 生成後，在 'MST Solver' 的 GroupBox 內，按下 'Prim Algorithm' Button，會自動跳至 'MST Record' 分頁，輸出 Graph G 的 MST 總權重值 + 執行時間 ; 若先勾選 'Echo Print MST' 的 CheckBox，再按下 'Prim Algorithm' Button，同樣會跳至 'MST Record' 分頁，輸出 Graph G 的 MST 總權重值 + MST 路徑 + 執行時間。
+
+	4. Kruskal 與 Prim 的演算法執行時間比較圖 (Bar Chart)
+		
+		-> 先在 'Directed Graph G = (V, E)' GroupBox 內，完成圖 G 生成後，直接按下 'Comparison By Diagram' Button，會自動跳至 'Diagram' 分頁，並生成三個演算法 (Kruskal_Min、Kruskal_Heap、Prim)，在不同數量 |V| 之下，對應的 CPU (sec.) 時間的 Bar Chart。

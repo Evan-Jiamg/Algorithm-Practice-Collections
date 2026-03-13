@@ -1,0 +1,32 @@
+Basic: 
+
+ 	1. from infix to postfix
+
+ 	2. from infix to prefix
+
+ 	3. from posfix to prefix
+
+Advanced: 
+
+	1. from prefix to postfix
+
+	2. from postfix to infix
+	
+	3. from prefix to infix
+
+	4. 右側 Memo 顯示 Stack 在每次 pop、push 後，所儲存的內容  (可用作 Tracing 流程)
+
+	5. 使用 Pagecontrol 分成三個分頁 
+		
+		1.  Infix -> Postfix、Prefix  
+		
+		2.  Postfix -> Infix、Prefix
+		
+		3.  Prefix -> Infix、Postfix
+
+	6. 新增 Re-Run 按鈕
+
+		按下按鈕後，會清除該分頁的 Memo、Text 的所有內容
+
+		
+

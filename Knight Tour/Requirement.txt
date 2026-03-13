@@ -1,0 +1,24 @@
+Requirement :
+
+	• Input: Matrix size n 
+	
+	• Output: A legal knight tour in an n*n matrix
+	
+		(1) 首先，在 "Matrix Size : " 欄位輸入方陣大小，再於 "X = " 欄位、"Y = " 欄位輸入方陣中的起始位置 (X, Y)。
+
+		(2) 其次，按下 "Knight Tour" 按鈕後，會自動跳至 "Tour in Memo" 分頁，檢查從起始位置 (X, Y)，是否能夠生成 Knight Tour 路徑，若無法生成路徑，會顯示 "自 (X, Y) 出發無騎士巡迴路徑"。
+
+		(3) 再者，若能夠成功生成騎士巡迴路徑，則會於右側 Memo 顯示從起始位置 1 到遍歷整個方陣的數字順序。於此同時，路徑生成完成後，也會再次檢查該 Knight Tour 是否正確，並輸出 "Valid Knight Tour ! " 或者 "Invalid Knight Tour ! " 於右側 Memo 上。
+	
+		(4) 接者，當成功生成正確的 Knight Tour 後，按下 "生成 StringGrid" 按鈕，會自動跳至 "Tour in StringGrid" 分頁，在 StringGrid 顯示從起始位置 1 到遍歷整個方陣的數字順序
+
+		(5) 防呆機制 : 
+
+			當輸入非正整數於 "Matrix Size : " 欄位，抑或者，在輸入起始位置的 "X = " 欄位和 "Y = " 欄位時，輸入小於 0 或大於等於 Matrix Size 的數值時，皆會跳至 "Tour in Memo" 分頁，生成警告訊息於 Memo 上。
+
+			在尚未生成合法的 Knight Tour 之前，會先設定 "生成 StringGrid" 按鈕為無法按下，避免在未生成合法 Knight Tour 時，被誤按或輸出錯誤的 StringGrid。
+
+		(6) 新增 "Re-Run / Clear All" 按鈕
+			
+			按下 "Re-Run / Clear All" 按鈕後，會將所有 Edit 欄位、"Tour in Memo" 分頁的 Memo，以及 "Tour in StringGrid" 分頁的 StringGrid 的內容全部清除。於此同時，也會重新將 "生成 StringGrid" 的按鈕設定為無法按下，避免在未生成合法 Knight Tour 時，被誤按或輸出錯誤的 StringGrid。
+。

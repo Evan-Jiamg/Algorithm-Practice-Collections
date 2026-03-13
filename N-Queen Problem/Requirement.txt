@@ -1,0 +1,17 @@
+Requirement :
+	
+	• Input: size n
+
+	• Output: All solutions to the n-Queen problem (where the n queens in the nxn board would not attack each other)
+
+		(1) 首先，輸入方陣大小於 "Size = " 欄位。
+		
+		(2) 接者，選擇是否勾選 "Solve and Show in Grid"
+		
+			(2)-1 若有勾選，並按下 "Solve n-Queen problem" 按鈕，會自動跳至 "Queen in Grid" 分頁，並利用 ShowMessage 的方法，依序告訴使用者 "this is the solution #N"，並於 StringGrid 顯示當下 solution 的所有 Queen 位置。 除此之外，也會在 "Queen Positions" 分頁的 Memo 上，顯示所有 Queen 的合法 solution。同時，在 "Queens in Chess" 分頁的 Memo 上，根據編號依序顯示每個 solution 下，所有 Queen 在方陣中的位置。
+
+			(2)-2 若沒有勾選，並按下 "Solve n-Queen problem" 按鈕，會自動跳至 "Queens Positions" 分頁，並於 Memo 顯示所有 Queen 的合法 solution。同時，在 "Queens in Chess" 分頁的 Memo 上，根據編號依序顯示每個 solution 下，所有 Queen 在方陣中的位置。
+
+		(3) 防呆機制 : 
+			
+			若輸入小於等於 1 或大於等於 30 的正整數於方陣的 "Size = " 欄位，並按下 "Solve n-Queen problem" 按鈕時，會自動跳至 "Queens Positions" 分頁，並顯示警告訊息於當下分頁的 Memo 上。

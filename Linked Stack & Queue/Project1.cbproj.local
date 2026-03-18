@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/01/29 21:21:16.000.093,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2025/01/29 21:21:16.000.378,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2025/04/22 14:44:51.000.914,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2025/04/22 14:44:52.000.401,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2025/04/22 14:45:11.000.427,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.cpp=D:\112701018_姜明志_HW5\Unit1.cpp</Transaction>
+    <Transaction>2025/04/22 14:45:11.000.427,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\112701018_姜明志_HW5\Unit1.dfm</Transaction>
+    <Transaction>2025/04/22 14:45:11.000.407,C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=D:\112701018_姜明志_HW5\Project1PCH1.h</Transaction>
+    <Transaction>2025/04/22 14:45:11.000.427,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.h=D:\112701018_姜明志_HW5\Unit1.h</Transaction>
+    <Transaction>2025/04/22 14:45:11.000.449,C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1.cbproj=D:\112701018_姜明志_HW5\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
